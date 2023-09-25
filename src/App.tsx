@@ -1,7 +1,8 @@
 import React from 'react';
 
 import './App.css';
-import ShopItemFunc from "./components/ShopItemFunc";
+import ShopItemFuncClass from "./components/ShopItemFunc/index.class";
+import ShopItemFunc from "./components/ShopItemFunc/index"
 
 const item = {
   brand: 'Tiger of Sweden',
@@ -18,10 +19,13 @@ function App() {
       <div className="background-element">
       </div>
       <div className="highlight-window">
-        <div className='highlight-overlay'></div>
+        <div className='highlight-overlay'/>
       </div>
       <div className="window">
         <ShopItemFunc {...item} />
+      </div>
+      <div className="window">
+        <ShopItemFuncClass {...item} />
       </div>
     </div>
   );
